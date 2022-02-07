@@ -1,0 +1,50 @@
+{
+  "name": "autentica-smart-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Autentica (https://autentica.io)",
+  "main": "index.js",
+  "scripts": {
+    "ganache": "npx ganache-cli -d -p 7545 --chain.networkId 5777 --chain.chainId 1337",
+    "test": "npx truffle test"
+  },
+  "keywords": [
+    "autentica",
+    "smart contracts",
+    "ethereum",
+    "bsc",
+    "nft"
+  ],
+  "author": "Autentica",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.16.7",
+    "@ethersproject/bignumber": "^5.5.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@openzeppelin/truffle-upgrades": "^1.12.0",
+    "@truffle/hdwallet-provider": "^2.0.1",
+    "chai": "^4.3.4",
+    "cli-interact": "^0.1.9",
+    "dotenv": "^10.0.0",
+    "eth-gas-reporter": "^0.2.24",
+    "ethereum-ens": "^0.8.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.3",
+    "ganache": "^7.0.0",
+    "openzeppelin-test-helpers": "^0.5.1",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.7.17",
+    "solidity-docgen": "^0.6.0-beta.3",
+    "truffle": "^5.4.28",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-plugin-debugger": "^0.0.2",
+    "truffle-plugin-verify": "^0.5.21",
+    "web3": "^1.6.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/contracts-upgradeable": "^4.4.2"
+  }
+}
