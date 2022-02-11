@@ -12,17 +12,23 @@ This repository contains the source code of the smart contracts used by [Autenti
 
 ### Autentica ERC-20
 
-- Ethereum (Rinkeby): [0x51536429019ec9485bA05eeF591BCA521170fF2f](https://rinkeby.etherscan.io/address/0x51536429019ec9485bA05eeF591BCA521170fF2f)
+|  Network  | Address |
+| --------- | ------- |
+| Ethereum (Rinkeby) | [0x51536429019ec9485bA05eeF591BCA521170fF2f](https://rinkeby.etherscan.io/token/0x51536429019ec9485bA05eeF591BCA521170fF2f) |
 
 ### Autentica ERC-721
 
-- Ethereum (Rinkeby): [0x7E7821ef6C1D635f4E7f9Bc0964207CB0F10F45f](https://rinkeby.etherscan.io/address/0x7E7821ef6C1D635f4E7f9Bc0964207CB0F10F45f)
-- Binance Smart Chain (testnet): [0x289a01be6A52B664D1C2EDEBB19F6C6419fb8229](https://testnet.bscscan.com/address/0x289a01be6A52B664D1C2EDEBB19F6C6419fb8229)
+|  Network  | Address |
+| --------- | ------- |
+| Ethereum (Rinkeby) | [0x7E7821ef6C1D635f4E7f9Bc0964207CB0F10F45f](https://rinkeby.etherscan.io/address/0x7E7821ef6C1D635f4E7f9Bc0964207CB0F10F45f) |
+| Binance Smart Chain (testnet)  | [0x289a01be6A52B664D1C2EDEBB19F6C6419fb8229](https://testnet.bscscan.com/address/0x289a01be6A52B664D1C2EDEBB19F6C6419fb8229) |
 
 ### NFT Marketplace (proxy)
 
-- Ethereum (Rinkeby): [0x12774EAd954F19DDe4142462C22E05F19452d320](https://rinkeby.etherscan.io/address/0x12774EAd954F19DDe4142462C22E05F19452d320)
-- Binance Smart Chain (testnet): [0x621866d04C82Fbec31b1C67c5E4FAa904584CaFC](https://testnet.bscscan.com/address/0x621866d04C82Fbec31b1C67c5E4FAa904584CaFC)
+|  Network  | Address |
+| --------- | ------- |
+| Ethereum (Rinkeby) | [0x12774EAd954F19DDe4142462C22E05F19452d320](https://rinkeby.etherscan.io/address/0x12774EAd954F19DDe4142462C22E05F19452d320) |
+| Binance Smart Chain (testnet)  | [0x621866d04C82Fbec31b1C67c5E4FAa904584CaFC](https://testnet.bscscan.com/address/0x621866d04C82Fbec31b1C67c5E4FAa904584CaFC) |
 
 ## Installation
 
@@ -90,6 +96,10 @@ npx truffle run verify Autentica AutenticaERC721 NFTMarketplace --network networ
 ```
 where `networkName` is the name of the network you want to deploy the smart contract to.
 Please check the `truffle-config.js` file to see the list of available networks.
+
+## Wiki
+
+More information about the smart contracts can be found in the [Wiki](https://github.com/AutenticaCrypto/smart-contracts/wiki) section.
 
 ## Security
 
