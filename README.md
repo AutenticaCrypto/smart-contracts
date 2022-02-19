@@ -1,5 +1,6 @@
 # Autentica
-[![CI](https://github.com/AutenticaCrypto/smart-contracts/actions/workflows/ci.yml/badge.svg)](https://github.com/AutenticaCrypto/smart-contracts/actions/workflows/ci.yml)
+[![CI](https://github.com/AutenticaCrypto/smart-contracts/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/AutenticaCrypto/smart-contracts/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/AutenticaCrypto/smart-contracts/badge.svg?branch=main)](https://coveralls.io/github/AutenticaCrypto/smart-contracts?branch=main)
 
 Autentica is a technology company focused on enabling creators around the world to present, sell and authenticate their artwork. With the help of our technology, artists and digital creators can authenticate their artwork without exposing themselves to fraudulent use or duplicates.
 
