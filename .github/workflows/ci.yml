@@ -27,7 +27,18 @@ jobs:
         run: echo "${{ secrets.DOT_ENV }}" > .env
       
       - name: Install dependencies
-        run: npm install      
+        run: npm install
       
       - name: Run Truffle compile
         run: CI=true npx truffle compile
+      
+      - name: Run coverage
+        run: npx truffle run coverage
+      
+      - name: Generate .coveralls.yml file
+        run: echo "${{ secrets.DOT_COVERALLS_YML }}" > .coveralls.yml
+      - name: Send Coverage information to Coveralls
+        run: cat coverage/lcov.info | npx coveralls
+
+      - name: Cleanup .env file
+        run: rm -f .env
