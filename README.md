@@ -1,4 +1,5 @@
 # Autentica
+[![CI](https://github.com/AutenticaCrypto/smart-contracts/actions/workflows/ci.yml/badge.svg)](https://github.com/AutenticaCrypto/smart-contracts/actions/workflows/ci.yml)
 
 Autentica is a technology company focused on enabling creators around the world to present, sell and authenticate their artwork. With the help of our technology, artists and digital creators can authenticate their artwork without exposing themselves to fraudulent use or duplicates.
 
