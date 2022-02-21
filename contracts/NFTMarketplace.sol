@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.11;
+pragma solidity 0.8.12;
 
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
@@ -73,6 +73,7 @@ contract NFTMarketplace is
         address indexed seller,
         address buyer,
         uint256 price,
+        uint256 ownerProceeds,
         uint256 creatorProceeds,
         uint256 investorProceeds
     );
@@ -89,6 +90,7 @@ contract NFTMarketplace is
         address buyer,
         address token,
         uint256 price,
+        uint256 ownerProceeds,
         uint256 creatorProceeds,
         uint256 investorProceeds
     );
@@ -359,6 +361,7 @@ contract NFTMarketplace is
             nft.owner,
             _msgSender(),
             price,
+            ownerProceeds,
             proceeds.creator,
             proceeds.investor
         );
@@ -460,6 +463,7 @@ contract NFTMarketplace is
             _msgSender(),
             token,
             price,
+            ownerProceeds,
             proceeds.creator,
             proceeds.investor
         );

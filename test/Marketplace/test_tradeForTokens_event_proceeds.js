@@ -67,6 +67,7 @@ contract("NFTMarketplace", accounts => {
                 buyer: buyer,
                 token: autenticaERC20.address,
                 price: price,
+                ownerProceeds: new BN(975),
                 creatorProceeds: new BN(0), // Creator doesn't take any royalties because this is the first trade where the creator is actually the owner
                 investorProceeds: new BN(0) // 0 because there is no investor
             })
@@ -86,6 +87,7 @@ contract("NFTMarketplace", accounts => {
                 buyer: seller,
                 token: autenticaERC20.address,
                 price: price,
+                ownerProceeds: new BN(875),
                 creatorProceeds: new BN(100), // 10% of the price
                 investorProceeds: new BN(0), // 0 because there is no investor
             })
@@ -118,6 +120,7 @@ contract("NFTMarketplace", accounts => {
                 buyer: buyer,
                 token: autenticaERC20.address,
                 price: price,
+                ownerProceeds: new BN(878),
                 creatorProceeds: new BN(0), // Creator doesn't take any royalties because this is the first trade where the creator is actually the owner
                 investorProceeds: new BN(97), // 10% of the owner's proceeds (97.5)
             })
@@ -137,6 +140,7 @@ contract("NFTMarketplace", accounts => {
                 buyer: seller,
                 token: autenticaERC20.address,
                 price: price,
+                ownerProceeds: new BN(875),
                 creatorProceeds: new BN(90), // 10% of the price - investor's proceeds
                 investorProceeds: new BN(10), // 10% of the creator's proceeds (10)
             })
