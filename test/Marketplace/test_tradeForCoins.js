@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const { expectRevert } = require('@openzeppelin/test-helpers')
 
 const AutenticaERC20 = artifacts.require("Autentica")
@@ -18,7 +17,7 @@ contract("NFTMarketplace", accounts => {
             // Deployments
             erc20 = await AutenticaERC20.new()
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
 
             // Operations
             const role = await market.OPERATOR_ROLE()

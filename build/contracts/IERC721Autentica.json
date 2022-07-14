@@ -376,7 +376,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getCreator\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getInvestor\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getInvestorFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getRoyaltyFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the number of tokens in ``owner``'s account.\"},\"decimals()\":{\"details\":\"Number of decimals used for fees.\"},\"getApproved(uint256)\":{\"details\":\"Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist.\"},\"getCreator(uint256)\":{\"details\":\"Returns the creator of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID. NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the creator to be paid, we need to know who created the token and that information must stay the same even if the person who owns the token changes.\"}},\"getInvestor(uint256)\":{\"details\":\"Returns the investor of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID. NOTE: Autentica lets other people to pay for the gas fees of the token minting so in that case the minter is not the creator and owner of the token.\"}},\"getInvestorFee(uint256)\":{\"details\":\"Returns the Investor fee of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID.\"}},\"getRoyaltyFee(uint256)\":{\"details\":\"Returns the Royalty fee of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID.\"}},\"isApprovedForAll(address,address)\":{\"details\":\"Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}\"},\"ownerOf(uint256)\":{\"details\":\"Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IERC721Autentica.sol\":\"IERC721Autentica\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x516a22876c1fab47f49b1bc22b4614491cd05338af8bd2e7b382da090a079990\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a439187f7126d31add4557f82d8aed6be0162007cd7182c48fd934dbab8f3849\",\"dweb:/ipfs/QmRPLguRFvrRJS7r6F1bcLvsx6q1VrgjEpZafyeL8D7xZh\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/IERC721Autentica.sol\":{\"keccak256\":\"0xeef1f110e9ed0dcafa6217bb2d72f06c9f16060802e89ae62f88a6389fe1e9b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://519f61a73050233bc19b8884b75549c5792a83feb4449322489fe2426b39ca9c\",\"dweb:/ipfs/QmSS51QXWQzhtNBdWoJJbfrYTfXJ2F46WcNt8Ywu9UjYW6\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getCreator\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getInvestor\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getInvestorFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getRoyaltyFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the number of tokens in ``owner``'s account.\"},\"decimals()\":{\"details\":\"Number of decimals used for fees.\"},\"getApproved(uint256)\":{\"details\":\"Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist.\"},\"getCreator(uint256)\":{\"details\":\"Returns the creator of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID. NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the creator to be paid, we need to know who created the token and that information must stay the same even if the person who owns the token changes.\"}},\"getInvestor(uint256)\":{\"details\":\"Returns the investor of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID. NOTE: Autentica lets other people to pay for the gas fees of the token minting so in that case the minter is not the creator and owner of the token.\"}},\"getInvestorFee(uint256)\":{\"details\":\"Returns the Investor fee of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID.\"}},\"getRoyaltyFee(uint256)\":{\"details\":\"Returns the Royalty fee of the `tokenId` token.\",\"params\":{\"tokenId\":\"NFT ID.\"}},\"isApprovedForAll(address,address)\":{\"details\":\"Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}\"},\"ownerOf(uint256)\":{\"details\":\"Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IERC721Autentica.sol\":\"IERC721Autentica\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xed6a749c5373af398105ce6ee3ac4763aa450ea7285d268c85d9eeca809cdb1f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://20a97f891d06f0fe91560ea1a142aaa26fdd22bed1b51606b7d48f670deeb50f\",\"dweb:/ipfs/QmTbCtZKChpaX5H2iRiTDMcSz29GSLCpTCDgJpcMR4wg8x\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/IERC721Autentica.sol\":{\"keccak256\":\"0xbf314c917cf8444918592abe616556e729b8f8ece909d6d36a87ad221c6d7411\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dd990a97c3b6529403511522a002f9e65dffbe70291b65cd297313ecb8235c4d\",\"dweb:/ipfs/QmS1sQRAKyeYJwRxdpn4R9EwnmvBn3VEmLRju5g4Xn7BqN\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -384,44 +384,48 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.12;\n\nimport \"@openzeppelin/contracts/token/ERC721/IERC721.sol\";\n\ninterface IERC721Autentica is IERC721 {\n    /**\n     * @dev Number of decimals used for fees.\n     */\n    function decimals() external view returns (uint8);\n\n    /**\n     * @dev Returns the Royalty fee of the `tokenId` token.\n     * @param tokenId NFT ID.\n     */\n    function getRoyaltyFee(uint256 tokenId) external view returns (uint256);\n\n    /**\n     * @dev Returns the Investor fee of the `tokenId` token.\n     * @param tokenId NFT ID.\n     */\n    function getInvestorFee(uint256 tokenId) external view returns (uint256);\n\n    /**\n     * @dev Returns the creator of the `tokenId` token.\n     * @param tokenId NFT ID.\n     *\n     * NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the\n     * creator to be paid, we need to know who created the token and that information must\n     * stay the same even if the person who owns the token changes.\n     */\n    function getCreator(uint256 tokenId) external view returns (address);\n\n    /**\n     * @dev Returns the investor of the `tokenId` token.\n     * @param tokenId NFT ID.\n     *\n     * NOTE: Autentica lets other people to pay for the gas fees of the token minting so\n     * in that case the minter is not the creator and owner of the token.\n     */\n    function getInvestor(uint256 tokenId) external view returns (address);\n}\n",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.15 <0.9.0;\n\nimport \"@openzeppelin/contracts/token/ERC721/IERC721.sol\";\n\ninterface IERC721Autentica is IERC721 {\n    /**\n     * @dev Number of decimals used for fees.\n     */\n    function decimals() external view returns (uint8);\n\n    /**\n     * @dev Returns the Royalty fee of the `tokenId` token.\n     * @param tokenId NFT ID.\n     */\n    function getRoyaltyFee(uint256 tokenId) external view returns (uint256);\n\n    /**\n     * @dev Returns the Investor fee of the `tokenId` token.\n     * @param tokenId NFT ID.\n     */\n    function getInvestorFee(uint256 tokenId) external view returns (uint256);\n\n    /**\n     * @dev Returns the creator of the `tokenId` token.\n     * @param tokenId NFT ID.\n     *\n     * NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the\n     * creator to be paid, we need to know who created the token and that information must\n     * stay the same even if the person who owns the token changes.\n     */\n    function getCreator(uint256 tokenId) external view returns (address);\n\n    /**\n     * @dev Returns the investor of the `tokenId` token.\n     * @param tokenId NFT ID.\n     *\n     * NOTE: Autentica lets other people to pay for the gas fees of the token minting so\n     * in that case the minter is not the creator and owner of the token.\n     */\n    function getInvestor(uint256 tokenId) external view returns (address);\n}\n",
   "sourcePath": "/Volumes/Storage/Workspace/Projects/Autentica/smart-contracts/contracts/IERC721Autentica.sol",
   "ast": {
     "absolutePath": "project:/contracts/IERC721Autentica.sol",
     "exportedSymbols": {
       "IERC165": [
-        4596
+        3581
       ],
       "IERC721": [
-        3266
+        2231
       ],
       "IERC721Autentica": [
-        5352
+        4337
       ]
     },
-    "id": 5353,
+    "id": 4338,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5310,
+        "id": 4295,
         "literals": [
           "solidity",
+          ">=",
           "0.8",
-          ".12"
+          ".15",
+          "<",
+          "0.9",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:33"
+        "src": "32:32:24"
       },
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
         "file": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-        "id": 5311,
+        "id": 4296,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 5353,
-        "sourceUnit": 3267,
-        "src": "57:58:33",
+        "scope": 4338,
+        "sourceUnit": 2232,
+        "src": "66:58:24",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -430,65 +434,65 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 5312,
+              "id": 4297,
               "name": "IERC721",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3266,
-              "src": "147:7:33"
+              "referencedDeclaration": 2231,
+              "src": "156:7:24"
             },
-            "id": 5313,
+            "id": 4298,
             "nodeType": "InheritanceSpecifier",
-            "src": "147:7:33"
+            "src": "156:7:24"
           }
         ],
         "canonicalName": "IERC721Autentica",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 5352,
+        "id": 4337,
         "linearizedBaseContracts": [
-          5352,
-          3266,
-          4596
+          4337,
+          2231,
+          3581
         ],
         "name": "IERC721Autentica",
-        "nameLocation": "127:16:33",
+        "nameLocation": "136:16:24",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "documentation": {
-              "id": 5314,
+              "id": 4299,
               "nodeType": "StructuredDocumentation",
-              "src": "161:57:33",
+              "src": "170:57:24",
               "text": " @dev Number of decimals used for fees."
             },
             "functionSelector": "313ce567",
-            "id": 5319,
+            "id": 4304,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "decimals",
-            "nameLocation": "232:8:33",
+            "nameLocation": "241:8:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5315,
+              "id": 4300,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "240:2:33"
+              "src": "249:2:24"
             },
             "returnParameters": {
-              "id": 5318,
+              "id": 4303,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5317,
+                  "id": 4302,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5319,
-                  "src": "266:5:33",
+                  "scope": 4304,
+                  "src": "275:5:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -496,10 +500,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 5316,
+                    "id": 4301,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "266:5:33",
+                    "src": "275:5:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -508,42 +512,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "265:7:33"
+              "src": "274:7:24"
             },
-            "scope": 5352,
-            "src": "223:50:33",
+            "scope": 4337,
+            "src": "232:50:24",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 5320,
+              "id": 4305,
               "nodeType": "StructuredDocumentation",
-              "src": "279:101:33",
+              "src": "288:101:24",
               "text": " @dev Returns the Royalty fee of the `tokenId` token.\n @param tokenId NFT ID."
             },
             "functionSelector": "9e4c0141",
-            "id": 5327,
+            "id": 4312,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRoyaltyFee",
-            "nameLocation": "394:13:33",
+            "nameLocation": "403:13:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5323,
+              "id": 4308,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5322,
+                  "id": 4307,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "416:7:33",
+                  "nameLocation": "425:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5327,
-                  "src": "408:15:33",
+                  "scope": 4312,
+                  "src": "417:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -551,10 +555,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5321,
+                    "id": 4306,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "408:7:33",
+                    "src": "417:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -563,21 +567,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "407:17:33"
+              "src": "416:17:24"
             },
             "returnParameters": {
-              "id": 5326,
+              "id": 4311,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5325,
+                  "id": 4310,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5327,
-                  "src": "448:7:33",
+                  "scope": 4312,
+                  "src": "457:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -585,10 +589,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5324,
+                    "id": 4309,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "448:7:33",
+                    "src": "457:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -597,42 +601,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "447:9:33"
+              "src": "456:9:24"
             },
-            "scope": 5352,
-            "src": "385:72:33",
+            "scope": 4337,
+            "src": "394:72:24",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 5328,
+              "id": 4313,
               "nodeType": "StructuredDocumentation",
-              "src": "463:102:33",
+              "src": "472:102:24",
               "text": " @dev Returns the Investor fee of the `tokenId` token.\n @param tokenId NFT ID."
             },
             "functionSelector": "f915765b",
-            "id": 5335,
+            "id": 4320,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getInvestorFee",
-            "nameLocation": "579:14:33",
+            "nameLocation": "588:14:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5331,
+              "id": 4316,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5330,
+                  "id": 4315,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "602:7:33",
+                  "nameLocation": "611:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5335,
-                  "src": "594:15:33",
+                  "scope": 4320,
+                  "src": "603:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -640,10 +644,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5329,
+                    "id": 4314,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "594:7:33",
+                    "src": "603:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -652,21 +656,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "593:17:33"
+              "src": "602:17:24"
             },
             "returnParameters": {
-              "id": 5334,
+              "id": 4319,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5333,
+                  "id": 4318,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5335,
-                  "src": "634:7:33",
+                  "scope": 4320,
+                  "src": "643:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -674,10 +678,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5332,
+                    "id": 4317,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "634:7:33",
+                    "src": "643:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -686,42 +690,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "633:9:33"
+              "src": "642:9:24"
             },
-            "scope": 5352,
-            "src": "570:73:33",
+            "scope": 4337,
+            "src": "579:73:24",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 5336,
+              "id": 4321,
               "nodeType": "StructuredDocumentation",
-              "src": "649:357:33",
+              "src": "658:357:24",
               "text": " @dev Returns the creator of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the\n creator to be paid, we need to know who created the token and that information must\n stay the same even if the person who owns the token changes."
             },
             "functionSelector": "d48e638a",
-            "id": 5343,
+            "id": 4328,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getCreator",
-            "nameLocation": "1020:10:33",
+            "nameLocation": "1029:10:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5339,
+              "id": 4324,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5338,
+                  "id": 4323,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "1039:7:33",
+                  "nameLocation": "1048:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5343,
-                  "src": "1031:15:33",
+                  "scope": 4328,
+                  "src": "1040:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -729,10 +733,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5337,
+                    "id": 4322,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1031:7:33",
+                    "src": "1040:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -741,21 +745,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1030:17:33"
+              "src": "1039:17:24"
             },
             "returnParameters": {
-              "id": 5342,
+              "id": 4327,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5341,
+                  "id": 4326,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5343,
-                  "src": "1071:7:33",
+                  "scope": 4328,
+                  "src": "1080:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -763,10 +767,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5340,
+                    "id": 4325,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1071:7:33",
+                    "src": "1080:7:24",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -776,42 +780,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1070:9:33"
+              "src": "1079:9:24"
             },
-            "scope": 5352,
-            "src": "1011:69:33",
+            "scope": 4337,
+            "src": "1020:69:24",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "documentation": {
-              "id": 5344,
+              "id": 4329,
               "nodeType": "StructuredDocumentation",
-              "src": "1086:268:33",
+              "src": "1095:268:24",
               "text": " @dev Returns the investor of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: Autentica lets other people to pay for the gas fees of the token minting so\n in that case the minter is not the creator and owner of the token."
             },
             "functionSelector": "c99dccf9",
-            "id": 5351,
+            "id": 4336,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getInvestor",
-            "nameLocation": "1368:11:33",
+            "nameLocation": "1377:11:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5347,
+              "id": 4332,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5346,
+                  "id": 4331,
                   "mutability": "mutable",
                   "name": "tokenId",
-                  "nameLocation": "1388:7:33",
+                  "nameLocation": "1397:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5351,
-                  "src": "1380:15:33",
+                  "scope": 4336,
+                  "src": "1389:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -819,10 +823,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5345,
+                    "id": 4330,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1380:7:33",
+                    "src": "1389:7:24",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -831,21 +835,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1379:17:33"
+              "src": "1388:17:24"
             },
             "returnParameters": {
-              "id": 5350,
+              "id": 4335,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5349,
+                  "id": 4334,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5351,
-                  "src": "1420:7:33",
+                  "scope": 4336,
+                  "src": "1429:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -853,10 +857,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5348,
+                    "id": 4333,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1420:7:33",
+                    "src": "1429:7:24",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -866,525 +870,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1419:9:33"
+              "src": "1428:9:24"
             },
-            "scope": 5352,
-            "src": "1359:70:33",
+            "scope": 4337,
+            "src": "1368:70:24",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 5353,
-        "src": "117:1314:33",
+        "scope": 4338,
+        "src": "126:1314:24",
         "usedErrors": []
       }
     ],
-    "src": "32:1400:33"
-  },
-  "legacyAST": {
-    "absolutePath": "project:/contracts/IERC721Autentica.sol",
-    "exportedSymbols": {
-      "IERC165": [
-        4596
-      ],
-      "IERC721": [
-        3266
-      ],
-      "IERC721Autentica": [
-        5352
-      ]
-    },
-    "id": 5353,
-    "license": "MIT",
-    "nodeType": "SourceUnit",
-    "nodes": [
-      {
-        "id": 5310,
-        "literals": [
-          "solidity",
-          "0.8",
-          ".12"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "32:23:33"
-      },
-      {
-        "absolutePath": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-        "file": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-        "id": 5311,
-        "nameLocation": "-1:-1:-1",
-        "nodeType": "ImportDirective",
-        "scope": 5353,
-        "sourceUnit": 3267,
-        "src": "57:58:33",
-        "symbolAliases": [],
-        "unitAlias": ""
-      },
-      {
-        "abstract": false,
-        "baseContracts": [
-          {
-            "baseName": {
-              "id": 5312,
-              "name": "IERC721",
-              "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3266,
-              "src": "147:7:33"
-            },
-            "id": 5313,
-            "nodeType": "InheritanceSpecifier",
-            "src": "147:7:33"
-          }
-        ],
-        "canonicalName": "IERC721Autentica",
-        "contractDependencies": [],
-        "contractKind": "interface",
-        "fullyImplemented": false,
-        "id": 5352,
-        "linearizedBaseContracts": [
-          5352,
-          3266,
-          4596
-        ],
-        "name": "IERC721Autentica",
-        "nameLocation": "127:16:33",
-        "nodeType": "ContractDefinition",
-        "nodes": [
-          {
-            "documentation": {
-              "id": 5314,
-              "nodeType": "StructuredDocumentation",
-              "src": "161:57:33",
-              "text": " @dev Number of decimals used for fees."
-            },
-            "functionSelector": "313ce567",
-            "id": 5319,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "decimals",
-            "nameLocation": "232:8:33",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5315,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "240:2:33"
-            },
-            "returnParameters": {
-              "id": 5318,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5317,
-                  "mutability": "mutable",
-                  "name": "",
-                  "nameLocation": "-1:-1:-1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5319,
-                  "src": "266:5:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint8",
-                    "typeString": "uint8"
-                  },
-                  "typeName": {
-                    "id": 5316,
-                    "name": "uint8",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "266:5:33",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint8",
-                      "typeString": "uint8"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "265:7:33"
-            },
-            "scope": 5352,
-            "src": "223:50:33",
-            "stateMutability": "view",
-            "virtual": false,
-            "visibility": "external"
-          },
-          {
-            "documentation": {
-              "id": 5320,
-              "nodeType": "StructuredDocumentation",
-              "src": "279:101:33",
-              "text": " @dev Returns the Royalty fee of the `tokenId` token.\n @param tokenId NFT ID."
-            },
-            "functionSelector": "9e4c0141",
-            "id": 5327,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getRoyaltyFee",
-            "nameLocation": "394:13:33",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5323,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5322,
-                  "mutability": "mutable",
-                  "name": "tokenId",
-                  "nameLocation": "416:7:33",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5327,
-                  "src": "408:15:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5321,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "408:7:33",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "407:17:33"
-            },
-            "returnParameters": {
-              "id": 5326,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5325,
-                  "mutability": "mutable",
-                  "name": "",
-                  "nameLocation": "-1:-1:-1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5327,
-                  "src": "448:7:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5324,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "448:7:33",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "447:9:33"
-            },
-            "scope": 5352,
-            "src": "385:72:33",
-            "stateMutability": "view",
-            "virtual": false,
-            "visibility": "external"
-          },
-          {
-            "documentation": {
-              "id": 5328,
-              "nodeType": "StructuredDocumentation",
-              "src": "463:102:33",
-              "text": " @dev Returns the Investor fee of the `tokenId` token.\n @param tokenId NFT ID."
-            },
-            "functionSelector": "f915765b",
-            "id": 5335,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getInvestorFee",
-            "nameLocation": "579:14:33",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5331,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5330,
-                  "mutability": "mutable",
-                  "name": "tokenId",
-                  "nameLocation": "602:7:33",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5335,
-                  "src": "594:15:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5329,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "594:7:33",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "593:17:33"
-            },
-            "returnParameters": {
-              "id": 5334,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5333,
-                  "mutability": "mutable",
-                  "name": "",
-                  "nameLocation": "-1:-1:-1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5335,
-                  "src": "634:7:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5332,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "634:7:33",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "633:9:33"
-            },
-            "scope": 5352,
-            "src": "570:73:33",
-            "stateMutability": "view",
-            "virtual": false,
-            "visibility": "external"
-          },
-          {
-            "documentation": {
-              "id": 5336,
-              "nodeType": "StructuredDocumentation",
-              "src": "649:357:33",
-              "text": " @dev Returns the creator of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the\n creator to be paid, we need to know who created the token and that information must\n stay the same even if the person who owns the token changes."
-            },
-            "functionSelector": "d48e638a",
-            "id": 5343,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getCreator",
-            "nameLocation": "1020:10:33",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5339,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5338,
-                  "mutability": "mutable",
-                  "name": "tokenId",
-                  "nameLocation": "1039:7:33",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5343,
-                  "src": "1031:15:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5337,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1031:7:33",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1030:17:33"
-            },
-            "returnParameters": {
-              "id": 5342,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5341,
-                  "mutability": "mutable",
-                  "name": "",
-                  "nameLocation": "-1:-1:-1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5343,
-                  "src": "1071:7:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 5340,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1071:7:33",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1070:9:33"
-            },
-            "scope": 5352,
-            "src": "1011:69:33",
-            "stateMutability": "view",
-            "virtual": false,
-            "visibility": "external"
-          },
-          {
-            "documentation": {
-              "id": 5344,
-              "nodeType": "StructuredDocumentation",
-              "src": "1086:268:33",
-              "text": " @dev Returns the investor of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: Autentica lets other people to pay for the gas fees of the token minting so\n in that case the minter is not the creator and owner of the token."
-            },
-            "functionSelector": "c99dccf9",
-            "id": 5351,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getInvestor",
-            "nameLocation": "1368:11:33",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5347,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5346,
-                  "mutability": "mutable",
-                  "name": "tokenId",
-                  "nameLocation": "1388:7:33",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5351,
-                  "src": "1380:15:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5345,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1380:7:33",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1379:17:33"
-            },
-            "returnParameters": {
-              "id": 5350,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5349,
-                  "mutability": "mutable",
-                  "name": "",
-                  "nameLocation": "-1:-1:-1",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5351,
-                  "src": "1420:7:33",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 5348,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1420:7:33",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1419:9:33"
-            },
-            "scope": 5352,
-            "src": "1359:70:33",
-            "stateMutability": "view",
-            "virtual": false,
-            "visibility": "external"
-          }
-        ],
-        "scope": 5353,
-        "src": "117:1314:33",
-        "usedErrors": []
-      }
-    ],
-    "src": "32:1400:33"
+    "src": "32:1409:24"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.12+commit.f00d7308.Emscripten.clang"
+    "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-02-21T13:10:28.969Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-07-14T10:48:43.604Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
@@ -1431,7 +939,7 @@
         "details": "Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist."
       },
       "safeTransferFrom(address,address,uint256)": {
-        "details": "Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event."
+        "details": "Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event."
       },
       "safeTransferFrom(address,address,uint256,bytes)": {
         "details": "Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event."
