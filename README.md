@@ -22,13 +22,15 @@ This repository contains the source code of the smart contracts used by [Autenti
 
 |  Network  | Address |
 | --------- | ------- |
+| Ethereum | [0x48a868dD45151800e306e83234c0EeF55E5BC624](https://etherscan.io/address/0x48a868dd45151800e306e83234c0eef55e5bc624) |
 | Ethereum (Rinkeby) | [0x7E7821ef6C1D635f4E7f9Bc0964207CB0F10F45f](https://rinkeby.etherscan.io/address/0x7E7821ef6C1D635f4E7f9Bc0964207CB0F10F45f) |
 | Binance Smart Chain (testnet)  | [0x289a01be6A52B664D1C2EDEBB19F6C6419fb8229](https://testnet.bscscan.com/address/0x289a01be6A52B664D1C2EDEBB19F6C6419fb8229) |
 
-### NFT Marketplace (proxy)
+### NFT Marketplace
 
 |  Network  | Address |
 | --------- | ------- |
+| Ethereum | [0xc731d111023b11EB39606B672Be35f20C6D88Af1](https://etherscan.io/address/0xc731d111023b11eb39606b672be35f20c6d88af1) |
 | Ethereum (Rinkeby) | [0x12774EAd954F19DDe4142462C22E05F19452d320](https://rinkeby.etherscan.io/address/0x12774EAd954F19DDe4142462C22E05F19452d320) |
 | Binance Smart Chain (testnet)  | [0x621866d04C82Fbec31b1C67c5E4FAa904584CaFC](https://testnet.bscscan.com/address/0x621866d04C82Fbec31b1C67c5E4FAa904584CaFC) |
 
