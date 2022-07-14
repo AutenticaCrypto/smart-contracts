@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const { expect } = require('chai')
 const { dummyTokenAddresses } = require('../utils/TestUtils')
 
@@ -13,7 +12,7 @@ contract("NFTMarketplace", accounts => {
         })
 
         it("Should test view decimals()", async () => {
-            const market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            const market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
             let expected = 2
             let actual = await market.decimals()
             expect(actual.toNumber()).to.equal(expected)

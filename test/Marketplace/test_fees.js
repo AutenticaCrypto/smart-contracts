@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const { expect } = require('chai')
 const { autenticaERC721SignatureTypes, generateSignature, decimalsRepresentation, convertedDecimalsRepresentation, dummyTokenAddresses } = require('../utils/TestUtils')
 const { BN, expectRevert } = require('@openzeppelin/test-helpers')
@@ -19,7 +18,7 @@ contract("NFTMarketplace", accounts => {
             [deployer, seller, buyer, buyer2, autentica, creator] = accounts
 
             // Deployments
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
             autenticaERC721 = await AutenticaERC721.new()
             erc721Mock = await ERC721Mock.new("Mock", "MCK")
             erc721RoyaltiesMock = await ERC721RoyaltiesMock.new("Mock", "MCK")
@@ -86,7 +85,7 @@ contract("NFTMarketplace", accounts => {
             [deployer, seller, buyer, buyer2, autentica, creator, investor, operator] = accounts
 
             // Deployments
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
             autenticaERC721 = await AutenticaERC721.new()
             erc721Mock = await ERC721Mock.new("Mock", "MCK")
             autenticaERC721CompatibleMock = await AutenticaERC721CompatibleMock.new("Mock", "MCK")

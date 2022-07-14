@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const { expect } = require('chai')
 const { dummyTokenAddresses } = require('../utils/TestUtils')
 
@@ -13,7 +12,7 @@ contract("NFTMarketplace", accounts => {
         })
 
         it("Should test autentica()", async () => {
-            const market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            const market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
             expect(await market.autentica()).to.equal(autentica)
         })
     })

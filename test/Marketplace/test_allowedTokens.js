@@ -1,7 +1,5 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
-const expectEvent = require('@openzeppelin/test-helpers/src/expectEvent')
 const { expect } = require('chai')
-const { BN, constants, expectRevert } = require('@openzeppelin/test-helpers')
+const { BN, constants, expectRevert, expectEvent } = require('@openzeppelin/test-helpers')
 const { dummyTokenAddresses } = require('../utils/TestUtils')
 
 const NFTMarketplace = artifacts.require("NFTMarketplace")
@@ -17,7 +15,7 @@ contract("NFTMarketplace", accounts => {
             [deployer, user, autentica] = accounts
 
             // Deployments
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should have the correct length", async () => {
@@ -30,7 +28,7 @@ contract("NFTMarketplace", accounts => {
             [deployer, user, autentica] = accounts
 
             // Deployments
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should have the same elements", async () => {
@@ -53,7 +51,7 @@ contract("NFTMarketplace", accounts => {
             [deployer, user, autentica] = accounts
 
             // Deployments
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should be allowed", async () => {
@@ -72,7 +70,7 @@ contract("NFTMarketplace", accounts => {
             [deployer, user, autentica] = accounts
 
             // Deployments
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should fail with: NFTMarketplace: Only admins can add allowed tokens", async () => {
@@ -109,7 +107,7 @@ contract("NFTMarketplace", accounts => {
             [deployer, user, autentica] = accounts
 
             // Deployments
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should fail with: NFTMarketplace: Only admins can remove allowed tokens", async () => {

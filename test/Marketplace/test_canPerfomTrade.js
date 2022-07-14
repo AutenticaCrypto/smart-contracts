@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const { expect, assert } = require('chai')
 const { BN, expectRevert } = require('@openzeppelin/test-helpers')
 const { 
@@ -32,7 +31,7 @@ contract("NFTMarketplace", accounts => {
             autenticaERC20 = await AutenticaERC20.new()
             autenticaERC721 = await AutenticaERC721.new()
             erc721Mock = await ERC721Mock.new("Mock", "MCK")
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
 
             // Info
             decimals = await autenticaERC721.decimals()

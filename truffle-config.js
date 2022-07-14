@@ -33,7 +33,7 @@ module.exports = {
     eth: {
       provider: () => walletProvider(`https://mainnet.infura.io/v3/${getEnvironmentVariable(keyInfuraApiKey)}`),
       network_id: 1,                    // Mainnet's id
-      maxFeePerGas: 60000000000,        // 60 Gwei (check https://etherscan.io/gastracker)
+      maxFeePerGas: 15000000000,        // 15 Gwei (check https://etherscan.io/gastracker)
       maxPriorityFeePerGas: 2000000000, // 2 Gwei
       skipDryRun: true                  // Skip dry run before migrations? (default: false for public nets )
     },
@@ -65,10 +65,11 @@ module.exports = {
   // Compiler
   compilers: {
     solc: {
-      version: "0.8.12",
+      version: "0.8.15",
       settings: {
         optimizer: {
-          enabled: false
+          enabled: true,
+          runs: 200
         }
       }
     }

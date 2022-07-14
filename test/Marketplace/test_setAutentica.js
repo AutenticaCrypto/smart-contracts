@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const expectEvent = require('@openzeppelin/test-helpers/src/expectEvent')
 const { expect } = require('chai')
 const { expectRevert } = require('@openzeppelin/test-helpers')
@@ -17,7 +16,7 @@ contract("NFTMarketplace", accounts => {
 
             // Deployments
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica1, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica1, dummyTokenAddresses)
         })
 
         it("Should test require: NFTMarketplace: Only admins can change this", async () => {

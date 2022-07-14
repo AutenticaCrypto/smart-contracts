@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.12;
+pragma solidity >=0.8.15 <0.9.0;
 
-import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol";
@@ -12,9 +12,9 @@ import "@openzeppelin/contracts/interfaces/IERC2981.sol";
 import "./IERC721Autentica.sol";
 
 contract NFTMarketplace is
-    AccessControlUpgradeable,
-    ReentrancyGuardUpgradeable,
-    PausableUpgradeable
+    AccessControl,
+    ReentrancyGuard,
+    Pausable
 {
     // Number of decimals used for fees.
     uint8 public constant DECIMALS = 2;
@@ -105,20 +105,10 @@ contract NFTMarketplace is
     event AllowedTokenRemoved(address indexed tokenAddress);
 
     /**
-     * @dev The initializer (upgradeable constructor) sets the creator of the contract as the admin
+     * The constructor sets the creator of the contract as the admin
      * and operator of this smart contract, sets the wallet address for Autentica and sets the allowed tokens.
      */
-    function initialize(address wallet, address[] memory allowedTokens)
-        public
-        initializer
-    {
-        // Initialize all the inherited abstract contracts.
-        __Context_init_unchained();
-        __ERC165_init_unchained();
-        __AccessControl_init_unchained();
-        __ReentrancyGuard_init_unchained();
-        __Pausable_init_unchained();
-
+    constructor(address wallet, address[] memory allowedTokens) {
         // Grant the admin role to the owner
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
         // Grant the operator role to the owner

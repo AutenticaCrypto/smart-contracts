@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const { expectRevert, BN } = require('@openzeppelin/test-helpers')
 
 const AutenticaERC721 = artifacts.require("AutenticaERC721")
@@ -16,7 +15,7 @@ contract("NFTMarketplace", accounts => {
 
             // Deployments
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should test require: NFTMarketplace: Token not allowed", async () => {

@@ -1,4 +1,3 @@
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 const { BN, expectEvent, expectRevert } = require('@openzeppelin/test-helpers')
 
 const AutenticaERC721 = artifacts.require("AutenticaERC721")
@@ -16,7 +15,7 @@ contract("NFTMarketplace", accounts => {
 
             // Deployments
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should test require: NFTMarketplace: Only admins can pause", async () => {
@@ -41,7 +40,7 @@ contract("NFTMarketplace", accounts => {
 
             // Deployments
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should test require: NFTMarketplace: Only admins can unpause", async () => {
@@ -75,7 +74,7 @@ contract("NFTMarketplace", accounts => {
 
             // Deployments
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should test require: NFTMarketplace: Contract is paused", async () => {
@@ -100,7 +99,7 @@ contract("NFTMarketplace", accounts => {
 
             // Deployments
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
         })
 
         it("Should test require: NFTMarketplace: Contract is paused", async () => {

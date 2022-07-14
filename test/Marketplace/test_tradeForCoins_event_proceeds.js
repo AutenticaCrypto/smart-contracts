@@ -1,5 +1,4 @@
 const { BN, expectEvent, constants } = require('@openzeppelin/test-helpers')
-const { deployProxy } = require('@openzeppelin/truffle-upgrades')
 
 const AutenticaERC721 = artifacts.require("AutenticaERC721")
 const NFTMarketplace = artifacts.require("NFTMarketplace")
@@ -17,7 +16,7 @@ contract("NFTMarketplace", accounts => {
 
             // Deployments
             autenticaERC721 = await AutenticaERC721.new()
-            market = await deployProxy(NFTMarketplace, [autentica, dummyTokenAddresses])
+            market = await NFTMarketplace.new(autentica, dummyTokenAddresses)
 
             // Information
             autenticaERC721Decimals = await autenticaERC721.decimals()

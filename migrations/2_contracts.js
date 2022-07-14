@@ -1,4 +1,3 @@
-const { deployProxy, erc1967 } = require('@openzeppelin/truffle-upgrades');
 const query = require('cli-interact').getYesNo;
 
 const { getEnvironmentVariable } = require("../helpers/env");
@@ -123,13 +122,13 @@ module.exports = async function (deployer, network, accounts) {
 
   // Deploy the NFT Marketplace
   let allAllowedTokens = baseAllowedTokens.concat(token !== null ? [token.address] : [])
-  let marketplaceProxy = await deployProxy(NFTMarketplace, [autenticaWallet, allAllowedTokens], { deployer });
-  let marketplaceImplementation = await erc1967.getImplementationAddress(marketplaceProxy.address);
-  let marketplaceAdmin = await erc1967.getAdminAddress(marketplaceProxy.address);
+
+  await deployer.deploy(NFTMarketplace, autenticaWallet, allAllowedTokens)
+  const marketplace = await NFTMarketplace.deployed()
 
   // Grant roles
-  const marketplaceOperatorRole = await marketplaceProxy.OPERATOR_ROLE()
-  await marketplaceProxy.grantRole(marketplaceOperatorRole, operator)
+  const marketplaceOperatorRole = await marketplace.OPERATOR_ROLE()
+  await marketplace.grantRole(marketplaceOperatorRole, operator)
   console.log('Granted the "operator" role in the NFT Marketplace smart contract for', operator)
 
   const nftOperatorRole = await nft.OPERATOR_ROLE()
@@ -137,8 +136,8 @@ module.exports = async function (deployer, network, accounts) {
   console.log('Granted the "operator" role in the ERC-721 smart contract for', operator)
 
   // Set the marketplace address
-  await nft.setMarketplace(marketplaceProxy.address)
-  console.log('Set the "marketplace" address in the ERC-721 smart contract to', marketplaceProxy.address)
+  await nft.setMarketplace(marketplace.address)
+  console.log('Set the "marketplace" address in the ERC-721 smart contract to', marketplace.address)
 
   // Additional logs
   console.log('All allowed tokens for the NFT Marketplace', allAllowedTokens)
@@ -164,16 +163,8 @@ module.exports = async function (deployer, network, accounts) {
       address: nft.address
     },
     {
-      name: 'NFT Marketplace (proxy)',
-      address: marketplaceProxy.address
-    },
-    {
-      name: 'NFT Marketplace (implementation)',
-      address: marketplaceImplementation
-    },
-    {
-      name: 'NFT Marketplace (admin)',
-      address: marketplaceAdmin
+      name: 'NFT Marketplace',
+      address: marketplace.address
     },
   ]);
 };
