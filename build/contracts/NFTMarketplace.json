@@ -38518,6 +38518,51 @@
       "address": "0xc731d111023b11EB39606B672Be35f20C6D88Af1",
       "transactionHash": "0xabc35d69809d0d746b7eaa966908ad83e795ed76dc12f3f568f02047bb2fcb11"
     },
+    "56": {
+      "events": {
+        "0xf849d00bc67e9e4bf072df9680646c59b8c5380160834c2e1d4896ce5ec81f75": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            }
+          ],
+          "name": "AllowedTokenAdded",
+          "type": "event"
+        },
+        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            }
+          ],
+          "name": "RoleGranted",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x1a224a1a77f76aac623571408c45789a173314c8",
+      "transactionHash": "0x4df4736c841eedc47b78f57d91f0f7c53088a98bf0ad2e91ae35b4a78b25b8b5"
+    },
     "4": {
       "events": {
         "0xf849d00bc67e9e4bf072df9680646c59b8c5380160834c2e1d4896ce5ec81f75": {
