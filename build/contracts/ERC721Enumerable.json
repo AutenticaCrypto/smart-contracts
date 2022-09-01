@@ -417,7 +417,7 @@
         2617
       ],
       "IERC165": [
-        3581
+        3573
       ],
       "IERC721": [
         2231
@@ -520,7 +520,7 @@
           2800,
           2231,
           3367,
-          3581,
+          3573,
           3117
         ],
         "name": "ERC721Enumerable",
@@ -723,7 +723,7 @@
           {
             "baseFunctions": [
               1342,
-              3580
+              3572
             ],
             "body": {
               "id": 2328,
@@ -933,7 +933,7 @@
                   "id": 2310,
                   "name": "IERC165",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3581,
+                  "referencedDeclaration": 3573,
                   "src": "1066:7:12"
                 },
                 {
@@ -4457,8 +4457,8 @@
     "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-14T10:48:43.554Z",
+  "schemaVersion": "3.4.9",
+  "updatedAt": "2022-09-01T11:50:54.051Z",
   "devdoc": {
     "details": "This implements an optional extension of {ERC721} defined in the EIP that adds enumerability of all the token ids in the contract as well as all token ids owned by each account.",
     "kind": "dev",

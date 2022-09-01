@@ -361,7 +361,7 @@
         2742
       ],
       "IERC165": [
-        3581
+        3573
       ],
       "IERC721": [
         2231
@@ -436,7 +436,7 @@
           2800,
           2231,
           3367,
-          3581,
+          3573,
           3117
         ],
         "name": "ERC721URIStorage",
@@ -1887,8 +1887,8 @@
     "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-14T10:48:43.557Z",
+  "schemaVersion": "3.4.9",
+  "updatedAt": "2022-09-01T11:50:54.053Z",
   "devdoc": {
     "details": "ERC721 token with storage based token URI management.",
     "kind": "dev",

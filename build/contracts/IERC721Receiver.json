@@ -274,8 +274,8 @@
     "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-14T10:48:43.550Z",
+  "schemaVersion": "3.4.9",
+  "updatedAt": "2022-09-01T11:50:54.049Z",
   "devdoc": {
     "details": "Interface for any contract that wants to support safeTransfers from ERC721 asset contracts.",
     "kind": "dev",

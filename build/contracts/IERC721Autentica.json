@@ -390,21 +390,21 @@
     "absolutePath": "project:/contracts/IERC721Autentica.sol",
     "exportedSymbols": {
       "IERC165": [
-        3581
+        3573
       ],
       "IERC721": [
         2231
       ],
       "IERC721Autentica": [
-        4337
+        4329
       ]
     },
-    "id": 4338,
+    "id": 4330,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4295,
+        "id": 4287,
         "literals": [
           "solidity",
           ">=",
@@ -420,10 +420,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
         "file": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
-        "id": 4296,
+        "id": 4288,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4338,
+        "scope": 4330,
         "sourceUnit": 2232,
         "src": "66:58:24",
         "symbolAliases": [],
@@ -434,13 +434,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 4297,
+              "id": 4289,
               "name": "IERC721",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2231,
               "src": "156:7:24"
             },
-            "id": 4298,
+            "id": 4290,
             "nodeType": "InheritanceSpecifier",
             "src": "156:7:24"
           }
@@ -449,11 +449,11 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 4337,
+        "id": 4329,
         "linearizedBaseContracts": [
-          4337,
+          4329,
           2231,
-          3581
+          3573
         ],
         "name": "IERC721Autentica",
         "nameLocation": "136:16:24",
@@ -461,13 +461,13 @@
         "nodes": [
           {
             "documentation": {
-              "id": 4299,
+              "id": 4291,
               "nodeType": "StructuredDocumentation",
               "src": "170:57:24",
               "text": " @dev Number of decimals used for fees."
             },
             "functionSelector": "313ce567",
-            "id": 4304,
+            "id": 4296,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -475,23 +475,23 @@
             "nameLocation": "241:8:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4300,
+              "id": 4292,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "249:2:24"
             },
             "returnParameters": {
-              "id": 4303,
+              "id": 4295,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4302,
+                  "id": 4294,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4304,
+                  "scope": 4296,
                   "src": "275:5:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -500,7 +500,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 4301,
+                    "id": 4293,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "275:5:24",
@@ -514,7 +514,7 @@
               ],
               "src": "274:7:24"
             },
-            "scope": 4337,
+            "scope": 4329,
             "src": "232:50:24",
             "stateMutability": "view",
             "virtual": false,
@@ -522,13 +522,13 @@
           },
           {
             "documentation": {
-              "id": 4305,
+              "id": 4297,
               "nodeType": "StructuredDocumentation",
               "src": "288:101:24",
               "text": " @dev Returns the Royalty fee of the `tokenId` token.\n @param tokenId NFT ID."
             },
             "functionSelector": "9e4c0141",
-            "id": 4312,
+            "id": 4304,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -536,17 +536,17 @@
             "nameLocation": "403:13:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4308,
+              "id": 4300,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4307,
+                  "id": 4299,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "425:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4312,
+                  "scope": 4304,
                   "src": "417:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -555,7 +555,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4306,
+                    "id": 4298,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "417:7:24",
@@ -570,17 +570,17 @@
               "src": "416:17:24"
             },
             "returnParameters": {
-              "id": 4311,
+              "id": 4303,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4310,
+                  "id": 4302,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4312,
+                  "scope": 4304,
                   "src": "457:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -589,7 +589,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4309,
+                    "id": 4301,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "457:7:24",
@@ -603,7 +603,7 @@
               ],
               "src": "456:9:24"
             },
-            "scope": 4337,
+            "scope": 4329,
             "src": "394:72:24",
             "stateMutability": "view",
             "virtual": false,
@@ -611,13 +611,13 @@
           },
           {
             "documentation": {
-              "id": 4313,
+              "id": 4305,
               "nodeType": "StructuredDocumentation",
               "src": "472:102:24",
               "text": " @dev Returns the Investor fee of the `tokenId` token.\n @param tokenId NFT ID."
             },
             "functionSelector": "f915765b",
-            "id": 4320,
+            "id": 4312,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -625,17 +625,17 @@
             "nameLocation": "588:14:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4316,
+              "id": 4308,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4315,
+                  "id": 4307,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "611:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4312,
                   "src": "603:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -644,7 +644,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4314,
+                    "id": 4306,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "603:7:24",
@@ -659,17 +659,17 @@
               "src": "602:17:24"
             },
             "returnParameters": {
-              "id": 4319,
+              "id": 4311,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4318,
+                  "id": 4310,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4320,
+                  "scope": 4312,
                   "src": "643:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -678,7 +678,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4317,
+                    "id": 4309,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "643:7:24",
@@ -692,7 +692,7 @@
               ],
               "src": "642:9:24"
             },
-            "scope": 4337,
+            "scope": 4329,
             "src": "579:73:24",
             "stateMutability": "view",
             "virtual": false,
@@ -700,13 +700,13 @@
           },
           {
             "documentation": {
-              "id": 4321,
+              "id": 4313,
               "nodeType": "StructuredDocumentation",
               "src": "658:357:24",
               "text": " @dev Returns the creator of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the\n creator to be paid, we need to know who created the token and that information must\n stay the same even if the person who owns the token changes."
             },
             "functionSelector": "d48e638a",
-            "id": 4328,
+            "id": 4320,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -714,17 +714,17 @@
             "nameLocation": "1029:10:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4324,
+              "id": 4316,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4323,
+                  "id": 4315,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "1048:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4328,
+                  "scope": 4320,
                   "src": "1040:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -733,7 +733,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4322,
+                    "id": 4314,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1040:7:24",
@@ -748,17 +748,17 @@
               "src": "1039:17:24"
             },
             "returnParameters": {
-              "id": 4327,
+              "id": 4319,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4326,
+                  "id": 4318,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4328,
+                  "scope": 4320,
                   "src": "1080:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -767,7 +767,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4325,
+                    "id": 4317,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1080:7:24",
@@ -782,7 +782,7 @@
               ],
               "src": "1079:9:24"
             },
-            "scope": 4337,
+            "scope": 4329,
             "src": "1020:69:24",
             "stateMutability": "view",
             "virtual": false,
@@ -790,13 +790,13 @@
           },
           {
             "documentation": {
-              "id": 4329,
+              "id": 4321,
               "nodeType": "StructuredDocumentation",
               "src": "1095:268:24",
               "text": " @dev Returns the investor of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: Autentica lets other people to pay for the gas fees of the token minting so\n in that case the minter is not the creator and owner of the token."
             },
             "functionSelector": "c99dccf9",
-            "id": 4336,
+            "id": 4328,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -804,17 +804,17 @@
             "nameLocation": "1377:11:24",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4332,
+              "id": 4324,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4331,
+                  "id": 4323,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "1397:7:24",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4336,
+                  "scope": 4328,
                   "src": "1389:15:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -823,7 +823,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 4330,
+                    "id": 4322,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1389:7:24",
@@ -838,17 +838,17 @@
               "src": "1388:17:24"
             },
             "returnParameters": {
-              "id": 4335,
+              "id": 4327,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 4334,
+                  "id": 4326,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4336,
+                  "scope": 4328,
                   "src": "1429:7:24",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -857,7 +857,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 4333,
+                    "id": 4325,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1429:7:24",
@@ -872,14 +872,14 @@
               ],
               "src": "1428:9:24"
             },
-            "scope": 4337,
+            "scope": 4329,
             "src": "1368:70:24",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 4338,
+        "scope": 4330,
         "src": "126:1314:24",
         "usedErrors": []
       }
@@ -891,8 +891,8 @@
     "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-14T10:48:43.604Z",
+  "schemaVersion": "3.4.9",
+  "updatedAt": "2022-09-01T11:50:54.089Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

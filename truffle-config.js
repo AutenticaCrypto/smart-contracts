@@ -35,7 +35,7 @@ module.exports = {
       network_id: 1,                    // Mainnet's id
       maxFeePerGas: 20000000000,        // 20 Gwei (check https://etherscan.io/gastracker)
       maxPriorityFeePerGas: 2000000000, // 2 Gwei
-      skipDryRun: true                  // Skip dry run before migrations? (default: false for public nets )
+      skipDryRun: false                 // Skip dry run before migrations? (default: false for public nets )
     },
 
     // Binance Smart Chain
@@ -50,7 +50,7 @@ module.exports = {
       network_id: 56,
       confirmations: 10,
       timeoutBlocks: 200,
-      skipDryRun: true
+      skipDryRun: false
     },
   },
 

@@ -16,6 +16,7 @@ This repository contains the source code of the smart contracts used by [Autenti
 
 |  Network  | Address |
 | --------- | ------- |
+| Ethereum | [0x214fEebda3AE6Bb842Bd17D91A0f346eeBcD7898](https://etherscan.io/address/0x214fEebda3AE6Bb842Bd17D91A0f346eeBcD7898) |
 | Ethereum (Rinkeby) | [0x51536429019ec9485bA05eeF591BCA521170fF2f](https://rinkeby.etherscan.io/token/0x51536429019ec9485bA05eeF591BCA521170fF2f) |
 
 ### Autentica ERC-721

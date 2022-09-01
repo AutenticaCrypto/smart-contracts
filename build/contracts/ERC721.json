@@ -11685,7 +11685,7 @@
         2115
       ],
       "IERC165": [
-        3581
+        3573
       ],
       "IERC721": [
         2231
@@ -11867,7 +11867,7 @@
           2800,
           2231,
           3367,
-          3581,
+          3573,
           3117
         ],
         "name": "ERC721",
@@ -12363,7 +12363,7 @@
           {
             "baseFunctions": [
               3366,
-              3580
+              3572
             ],
             "body": {
               "id": 1341,
@@ -12690,7 +12690,7 @@
                   "id": 1317,
                   "name": "IERC165",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3581,
+                  "referencedDeclaration": 3573,
                   "src": "1654:7:8"
                 }
               ],
@@ -22833,8 +22833,8 @@
     "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-14T10:48:43.540Z",
+  "schemaVersion": "3.4.9",
+  "updatedAt": "2022-09-01T11:50:54.041Z",
   "devdoc": {
     "details": "Implementation of https://eips.ethereum.org/EIPS/eip-721[ERC721] Non-Fungible Token Standard, including the Metadata extension, but not including the Enumerable extension, which is available separately as {ERC721Enumerable}.",
     "kind": "dev",

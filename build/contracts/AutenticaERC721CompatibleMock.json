@@ -12509,7 +12509,7 @@
         3095
       ],
       "AutenticaERC721CompatibleMock": [
-        5994
+        5986
       ],
       "Context": [
         3117
@@ -12521,13 +12521,13 @@
         2115
       ],
       "IERC165": [
-        3581
+        3573
       ],
       "IERC721": [
         2231
       ],
       "IERC721Autentica": [
-        4337
+        4329
       ],
       "IERC721Metadata": [
         2800
@@ -12539,12 +12539,12 @@
         3343
       ]
     },
-    "id": 5995,
+    "id": 5987,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5832,
+        "id": 5824,
         "literals": [
           "solidity",
           ">=",
@@ -12560,10 +12560,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
         "file": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
-        "id": 5833,
+        "id": 5825,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 5995,
+        "scope": 5987,
         "sourceUnit": 2116,
         "src": "66:57:27",
         "symbolAliases": [],
@@ -12572,11 +12572,11 @@
       {
         "absolutePath": "project:/contracts/IERC721Autentica.sol",
         "file": "../IERC721Autentica.sol",
-        "id": 5834,
+        "id": 5826,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 5995,
-        "sourceUnit": 4338,
+        "scope": 5987,
+        "sourceUnit": 4330,
         "src": "124:33:27",
         "symbolAliases": [],
         "unitAlias": ""
@@ -12586,25 +12586,25 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 5836,
+              "id": 5828,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2115,
               "src": "289:6:27"
             },
-            "id": 5837,
+            "id": 5829,
             "nodeType": "InheritanceSpecifier",
             "src": "289:6:27"
           },
           {
             "baseName": {
-              "id": 5838,
+              "id": 5830,
               "name": "IERC721Autentica",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4337,
+              "referencedDeclaration": 4329,
               "src": "297:16:27"
             },
-            "id": 5839,
+            "id": 5831,
             "nodeType": "InheritanceSpecifier",
             "src": "297:16:27"
           }
@@ -12613,21 +12613,21 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 5835,
+          "id": 5827,
           "nodeType": "StructuredDocumentation",
           "src": "159:88:27",
           "text": "@title Dummy Autentica ERC-721 compatible smart contract used for testing purposes."
         },
         "fullyImplemented": true,
-        "id": 5994,
+        "id": 5986,
         "linearizedBaseContracts": [
-          5994,
-          4337,
+          5986,
+          4329,
           2115,
           2800,
           2231,
           3367,
-          3581,
+          3573,
           3117
         ],
         "name": "AutenticaERC721CompatibleMock",
@@ -12637,12 +12637,12 @@
           {
             "constant": false,
             "functionSelector": "771282f6",
-            "id": 5842,
+            "id": 5834,
             "mutability": "mutable",
             "name": "currentSupply",
             "nameLocation": "335:13:27",
             "nodeType": "VariableDeclaration",
-            "scope": 5994,
+            "scope": 5986,
             "src": "320:32:27",
             "stateVariable": true,
             "storageLocation": "default",
@@ -12651,7 +12651,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 5840,
+              "id": 5832,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "320:7:27",
@@ -12662,7 +12662,7 @@
             },
             "value": {
               "hexValue": "30",
-              "id": 5841,
+              "id": 5833,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -12680,16 +12680,16 @@
           },
           {
             "canonicalName": "AutenticaERC721CompatibleMock.Details",
-            "id": 5851,
+            "id": 5843,
             "members": [
               {
                 "constant": false,
-                "id": 5844,
+                "id": 5836,
                 "mutability": "mutable",
                 "name": "creator",
                 "nameLocation": "444:7:27",
                 "nodeType": "VariableDeclaration",
-                "scope": 5851,
+                "scope": 5843,
                 "src": "436:15:27",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -12698,7 +12698,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 5843,
+                  "id": 5835,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "436:7:27",
@@ -12712,12 +12712,12 @@
               },
               {
                 "constant": false,
-                "id": 5846,
+                "id": 5838,
                 "mutability": "mutable",
                 "name": "investor",
                 "nameLocation": "469:8:27",
                 "nodeType": "VariableDeclaration",
-                "scope": 5851,
+                "scope": 5843,
                 "src": "461:16:27",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -12726,7 +12726,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 5845,
+                  "id": 5837,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "461:7:27",
@@ -12740,12 +12740,12 @@
               },
               {
                 "constant": false,
-                "id": 5848,
+                "id": 5840,
                 "mutability": "mutable",
                 "name": "royaltyFee",
                 "nameLocation": "495:10:27",
                 "nodeType": "VariableDeclaration",
-                "scope": 5851,
+                "scope": 5843,
                 "src": "487:18:27",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -12754,7 +12754,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 5847,
+                  "id": 5839,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "487:7:27",
@@ -12767,12 +12767,12 @@
               },
               {
                 "constant": false,
-                "id": 5850,
+                "id": 5842,
                 "mutability": "mutable",
                 "name": "investorFee",
                 "nameLocation": "523:11:27",
                 "nodeType": "VariableDeclaration",
-                "scope": 5851,
+                "scope": 5843,
                 "src": "515:19:27",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -12781,7 +12781,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 5849,
+                  "id": 5841,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "515:7:27",
@@ -12796,35 +12796,35 @@
             "name": "Details",
             "nameLocation": "418:7:27",
             "nodeType": "StructDefinition",
-            "scope": 5994,
+            "scope": 5986,
             "src": "411:130:27",
             "visibility": "public"
           },
           {
             "constant": false,
             "documentation": {
-              "id": 5852,
+              "id": 5844,
               "nodeType": "StructuredDocumentation",
               "src": "547:47:27",
               "text": "@dev See `AutenticaERC721.sol` for details."
             },
-            "id": 5857,
+            "id": 5849,
             "mutability": "mutable",
             "name": "_details",
             "nameLocation": "635:8:27",
             "nodeType": "VariableDeclaration",
-            "scope": 5994,
+            "scope": 5986,
             "src": "599:44:27",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5851_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5843_storage_$",
               "typeString": "mapping(uint256 => struct AutenticaERC721CompatibleMock.Details)"
             },
             "typeName": {
-              "id": 5856,
+              "id": 5848,
               "keyType": {
-                "id": 5853,
+                "id": 5845,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "607:7:27",
@@ -12836,23 +12836,23 @@
               "nodeType": "Mapping",
               "src": "599:27:27",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5851_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5843_storage_$",
                 "typeString": "mapping(uint256 => struct AutenticaERC721CompatibleMock.Details)"
               },
               "valueType": {
-                "id": 5855,
+                "id": 5847,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 5854,
+                  "id": 5846,
                   "name": "Details",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 5851,
+                  "referencedDeclaration": 5843,
                   "src": "618:7:27"
                 },
-                "referencedDeclaration": 5851,
+                "referencedDeclaration": 5843,
                 "src": "618:7:27",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Details_$5851_storage_ptr",
+                  "typeIdentifier": "t_struct$_Details_$5843_storage_ptr",
                   "typeString": "struct AutenticaERC721CompatibleMock.Details"
                 }
               }
@@ -12861,23 +12861,23 @@
           },
           {
             "body": {
-              "id": 5868,
+              "id": 5860,
               "nodeType": "Block",
               "src": "729:2:27",
               "statements": []
             },
-            "id": 5869,
+            "id": 5861,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
               {
                 "arguments": [
                   {
-                    "id": 5864,
+                    "id": 5856,
                     "name": "_name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 5859,
+                    "referencedDeclaration": 5851,
                     "src": "713:5:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -12885,11 +12885,11 @@
                     }
                   },
                   {
-                    "id": 5865,
+                    "id": 5857,
                     "name": "_symbol",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 5861,
+                    "referencedDeclaration": 5853,
                     "src": "720:7:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -12897,10 +12897,10 @@
                     }
                   }
                 ],
-                "id": 5866,
+                "id": 5858,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 5863,
+                  "id": 5855,
                   "name": "ERC721",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 2115,
@@ -12914,17 +12914,17 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5862,
+              "id": 5854,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5859,
+                  "id": 5851,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "676:5:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5869,
+                  "scope": 5861,
                   "src": "662:19:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -12933,7 +12933,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 5858,
+                    "id": 5850,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "662:6:27",
@@ -12946,12 +12946,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 5861,
+                  "id": 5853,
                   "mutability": "mutable",
                   "name": "_symbol",
                   "nameLocation": "697:7:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5869,
+                  "scope": 5861,
                   "src": "683:21:27",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -12960,7 +12960,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 5860,
+                    "id": 5852,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "683:6:27",
@@ -12975,12 +12975,12 @@
               "src": "661:44:27"
             },
             "returnParameters": {
-              "id": 5867,
+              "id": 5859,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "729:0:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "650:81:27",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -12988,7 +12988,7 @@
           },
           {
             "body": {
-              "id": 5903,
+              "id": 5895,
               "nodeType": "Block",
               "src": "812:268:27",
               "statements": [
@@ -12996,11 +12996,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 5879,
+                        "id": 5871,
                         "name": "_to",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5871,
+                        "referencedDeclaration": 5863,
                         "src": "828:3:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -13012,17 +13012,17 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 5882,
+                        "id": 5874,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 5880,
+                          "id": 5872,
                           "name": "currentSupply",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5842,
+                          "referencedDeclaration": 5834,
                           "src": "833:13:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -13033,7 +13033,7 @@
                         "operator": "+",
                         "rightExpression": {
                           "hexValue": "31",
-                          "id": 5881,
+                          "id": 5873,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -13065,7 +13065,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 5878,
+                      "id": 5870,
                       "name": "_mint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -13076,7 +13076,7 @@
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 5883,
+                    "id": 5875,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -13091,47 +13091,47 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5884,
+                  "id": 5876,
                   "nodeType": "ExpressionStatement",
                   "src": "822:29:27"
                 },
                 {
                   "expression": {
-                    "id": 5897,
+                    "id": 5889,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "baseExpression": {
-                        "id": 5885,
+                        "id": 5877,
                         "name": "_details",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5857,
+                        "referencedDeclaration": 5849,
                         "src": "861:8:27",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5851_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5843_storage_$",
                           "typeString": "mapping(uint256 => struct AutenticaERC721CompatibleMock.Details storage ref)"
                         }
                       },
-                      "id": 5889,
+                      "id": 5881,
                       "indexExpression": {
                         "commonType": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 5888,
+                        "id": 5880,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 5886,
+                          "id": 5878,
                           "name": "currentSupply",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5842,
+                          "referencedDeclaration": 5834,
                           "src": "870:13:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -13142,7 +13142,7 @@
                         "operator": "+",
                         "rightExpression": {
                           "hexValue": "31",
-                          "id": 5887,
+                          "id": 5879,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -13169,7 +13169,7 @@
                       "nodeType": "IndexAccess",
                       "src": "861:27:27",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Details_$5851_storage",
+                        "typeIdentifier": "t_struct$_Details_$5843_storage",
                         "typeString": "struct AutenticaERC721CompatibleMock.Details storage ref"
                       }
                     },
@@ -13178,11 +13178,11 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 5891,
+                          "id": 5883,
                           "name": "_to",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5871,
+                          "referencedDeclaration": 5863,
                           "src": "922:3:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -13191,7 +13191,7 @@
                         },
                         {
                           "expression": {
-                            "id": 5892,
+                            "id": 5884,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -13202,7 +13202,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 5893,
+                          "id": 5885,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -13216,11 +13216,11 @@
                           }
                         },
                         {
-                          "id": 5894,
+                          "id": 5886,
                           "name": "royaltyFee",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5873,
+                          "referencedDeclaration": 5865,
                           "src": "985:10:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -13228,11 +13228,11 @@
                           }
                         },
                         {
-                          "id": 5895,
+                          "id": 5887,
                           "name": "investorFee",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5875,
+                          "referencedDeclaration": 5867,
                           "src": "1022:11:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -13259,18 +13259,18 @@
                             "typeString": "uint256"
                           }
                         ],
-                        "id": 5890,
+                        "id": 5882,
                         "name": "Details",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5851,
+                        "referencedDeclaration": 5843,
                         "src": "891:7:27",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_Details_$5851_storage_ptr_$",
+                          "typeIdentifier": "t_type$_t_struct$_Details_$5843_storage_ptr_$",
                           "typeString": "type(struct AutenticaERC721CompatibleMock.Details storage pointer)"
                         }
                       },
-                      "id": 5896,
+                      "id": 5888,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -13286,33 +13286,33 @@
                       "src": "891:153:27",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Details_$5851_memory_ptr",
+                        "typeIdentifier": "t_struct$_Details_$5843_memory_ptr",
                         "typeString": "struct AutenticaERC721CompatibleMock.Details memory"
                       }
                     },
                     "src": "861:183:27",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Details_$5851_storage",
+                      "typeIdentifier": "t_struct$_Details_$5843_storage",
                       "typeString": "struct AutenticaERC721CompatibleMock.Details storage ref"
                     }
                   },
-                  "id": 5898,
+                  "id": 5890,
                   "nodeType": "ExpressionStatement",
                   "src": "861:183:27"
                 },
                 {
                   "expression": {
-                    "id": 5901,
+                    "id": 5893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 5899,
+                      "id": 5891,
                       "name": "currentSupply",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5842,
+                      "referencedDeclaration": 5834,
                       "src": "1055:13:27",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -13323,7 +13323,7 @@
                     "operator": "+=",
                     "rightHandSide": {
                       "hexValue": "31",
-                      "id": 5900,
+                      "id": 5892,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -13343,14 +13343,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 5902,
+                  "id": 5894,
                   "nodeType": "ExpressionStatement",
                   "src": "1055:18:27"
                 }
               ]
             },
             "functionSelector": "156e29f6",
-            "id": 5904,
+            "id": 5896,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -13358,17 +13358,17 @@
             "nameLocation": "746:4:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5876,
+              "id": 5868,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5871,
+                  "id": 5863,
                   "mutability": "mutable",
                   "name": "_to",
                   "nameLocation": "759:3:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5904,
+                  "scope": 5896,
                   "src": "751:11:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13377,7 +13377,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5870,
+                    "id": 5862,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "751:7:27",
@@ -13391,12 +13391,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 5873,
+                  "id": 5865,
                   "mutability": "mutable",
                   "name": "royaltyFee",
                   "nameLocation": "772:10:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5904,
+                  "scope": 5896,
                   "src": "764:18:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13405,7 +13405,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5872,
+                    "id": 5864,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "764:7:27",
@@ -13418,12 +13418,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 5875,
+                  "id": 5867,
                   "mutability": "mutable",
                   "name": "investorFee",
                   "nameLocation": "792:11:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5904,
+                  "scope": 5896,
                   "src": "784:19:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13432,7 +13432,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5874,
+                    "id": 5866,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "784:7:27",
@@ -13447,12 +13447,12 @@
               "src": "750:54:27"
             },
             "returnParameters": {
-              "id": 5877,
+              "id": 5869,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "812:0:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "737:343:27",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -13460,17 +13460,17 @@
           },
           {
             "baseFunctions": [
-              4304
+              4296
             ],
             "body": {
-              "id": 5912,
+              "id": 5904,
               "nodeType": "Block",
               "src": "1198:25:27",
               "statements": [
                 {
                   "expression": {
                     "hexValue": "34",
-                    "id": 5910,
+                    "id": 5902,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -13484,21 +13484,21 @@
                     },
                     "value": "4"
                   },
-                  "functionReturnParameters": 5909,
-                  "id": 5911,
+                  "functionReturnParameters": 5901,
+                  "id": 5903,
                   "nodeType": "Return",
                   "src": "1208:8:27"
                 }
               ]
             },
             "documentation": {
-              "id": 5905,
+              "id": 5897,
               "nodeType": "StructuredDocumentation",
               "src": "1086:57:27",
               "text": " @dev Number of decimals used for fees."
             },
             "functionSelector": "313ce567",
-            "id": 5913,
+            "id": 5905,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -13506,23 +13506,23 @@
             "nameLocation": "1157:8:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5906,
+              "id": 5898,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1165:2:27"
             },
             "returnParameters": {
-              "id": 5909,
+              "id": 5901,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5908,
+                  "id": 5900,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5913,
+                  "scope": 5905,
                   "src": "1191:5:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13531,7 +13531,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 5907,
+                    "id": 5899,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1191:5:27",
@@ -13545,7 +13545,7 @@
               ],
               "src": "1190:7:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "1148:75:27",
             "stateMutability": "pure",
             "virtual": false,
@@ -13553,10 +13553,10 @@
           },
           {
             "baseFunctions": [
-              4312
+              4304
             ],
             "body": {
-              "id": 5926,
+              "id": 5918,
               "nodeType": "Block",
               "src": "1407:52:27",
               "statements": [
@@ -13564,24 +13564,24 @@
                   "expression": {
                     "expression": {
                       "baseExpression": {
-                        "id": 5921,
+                        "id": 5913,
                         "name": "_details",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5857,
+                        "referencedDeclaration": 5849,
                         "src": "1424:8:27",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5851_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5843_storage_$",
                           "typeString": "mapping(uint256 => struct AutenticaERC721CompatibleMock.Details storage ref)"
                         }
                       },
-                      "id": 5923,
+                      "id": 5915,
                       "indexExpression": {
-                        "id": 5922,
+                        "id": 5914,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5916,
+                        "referencedDeclaration": 5908,
                         "src": "1433:7:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -13595,39 +13595,39 @@
                       "nodeType": "IndexAccess",
                       "src": "1424:17:27",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Details_$5851_storage",
+                        "typeIdentifier": "t_struct$_Details_$5843_storage",
                         "typeString": "struct AutenticaERC721CompatibleMock.Details storage ref"
                       }
                     },
-                    "id": 5924,
+                    "id": 5916,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "royaltyFee",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 5848,
+                    "referencedDeclaration": 5840,
                     "src": "1424:28:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 5920,
-                  "id": 5925,
+                  "functionReturnParameters": 5912,
+                  "id": 5917,
                   "nodeType": "Return",
                   "src": "1417:35:27"
                 }
               ]
             },
             "documentation": {
-              "id": 5914,
+              "id": 5906,
               "nodeType": "StructuredDocumentation",
               "src": "1229:101:27",
               "text": " @dev Returns the Royalty fee of the `tokenId` token.\n @param tokenId NFT ID."
             },
             "functionSelector": "9e4c0141",
-            "id": 5927,
+            "id": 5919,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -13635,17 +13635,17 @@
             "nameLocation": "1344:13:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5917,
+              "id": 5909,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5916,
+                  "id": 5908,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "1366:7:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5927,
+                  "scope": 5919,
                   "src": "1358:15:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13654,7 +13654,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5915,
+                    "id": 5907,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1358:7:27",
@@ -13669,17 +13669,17 @@
               "src": "1357:17:27"
             },
             "returnParameters": {
-              "id": 5920,
+              "id": 5912,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5919,
+                  "id": 5911,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5927,
+                  "scope": 5919,
                   "src": "1398:7:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13688,7 +13688,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5918,
+                    "id": 5910,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1398:7:27",
@@ -13702,7 +13702,7 @@
               ],
               "src": "1397:9:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "1335:124:27",
             "stateMutability": "view",
             "virtual": false,
@@ -13710,10 +13710,10 @@
           },
           {
             "baseFunctions": [
-              4320
+              4312
             ],
             "body": {
-              "id": 5940,
+              "id": 5932,
               "nodeType": "Block",
               "src": "1645:53:27",
               "statements": [
@@ -13721,24 +13721,24 @@
                   "expression": {
                     "expression": {
                       "baseExpression": {
-                        "id": 5935,
+                        "id": 5927,
                         "name": "_details",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5857,
+                        "referencedDeclaration": 5849,
                         "src": "1662:8:27",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5851_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5843_storage_$",
                           "typeString": "mapping(uint256 => struct AutenticaERC721CompatibleMock.Details storage ref)"
                         }
                       },
-                      "id": 5937,
+                      "id": 5929,
                       "indexExpression": {
-                        "id": 5936,
+                        "id": 5928,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5930,
+                        "referencedDeclaration": 5922,
                         "src": "1671:7:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -13752,39 +13752,39 @@
                       "nodeType": "IndexAccess",
                       "src": "1662:17:27",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Details_$5851_storage",
+                        "typeIdentifier": "t_struct$_Details_$5843_storage",
                         "typeString": "struct AutenticaERC721CompatibleMock.Details storage ref"
                       }
                     },
-                    "id": 5938,
+                    "id": 5930,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "investorFee",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 5850,
+                    "referencedDeclaration": 5842,
                     "src": "1662:29:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 5934,
-                  "id": 5939,
+                  "functionReturnParameters": 5926,
+                  "id": 5931,
                   "nodeType": "Return",
                   "src": "1655:36:27"
                 }
               ]
             },
             "documentation": {
-              "id": 5928,
+              "id": 5920,
               "nodeType": "StructuredDocumentation",
               "src": "1465:102:27",
               "text": " @dev Returns the Investor fee of the `tokenId` token.\n @param tokenId NFT ID."
             },
             "functionSelector": "f915765b",
-            "id": 5941,
+            "id": 5933,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -13792,17 +13792,17 @@
             "nameLocation": "1581:14:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5931,
+              "id": 5923,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5930,
+                  "id": 5922,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "1604:7:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5941,
+                  "scope": 5933,
                   "src": "1596:15:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13811,7 +13811,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5929,
+                    "id": 5921,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1596:7:27",
@@ -13826,17 +13826,17 @@
               "src": "1595:17:27"
             },
             "returnParameters": {
-              "id": 5934,
+              "id": 5926,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5933,
+                  "id": 5925,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5941,
+                  "scope": 5933,
                   "src": "1636:7:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13845,7 +13845,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5932,
+                    "id": 5924,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1636:7:27",
@@ -13859,7 +13859,7 @@
               ],
               "src": "1635:9:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "1572:126:27",
             "stateMutability": "view",
             "virtual": false,
@@ -13867,10 +13867,10 @@
           },
           {
             "baseFunctions": [
-              4328
+              4320
             ],
             "body": {
-              "id": 5954,
+              "id": 5946,
               "nodeType": "Block",
               "src": "2135:49:27",
               "statements": [
@@ -13878,24 +13878,24 @@
                   "expression": {
                     "expression": {
                       "baseExpression": {
-                        "id": 5949,
+                        "id": 5941,
                         "name": "_details",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5857,
+                        "referencedDeclaration": 5849,
                         "src": "2152:8:27",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5851_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5843_storage_$",
                           "typeString": "mapping(uint256 => struct AutenticaERC721CompatibleMock.Details storage ref)"
                         }
                       },
-                      "id": 5951,
+                      "id": 5943,
                       "indexExpression": {
-                        "id": 5950,
+                        "id": 5942,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5944,
+                        "referencedDeclaration": 5936,
                         "src": "2161:7:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -13909,39 +13909,39 @@
                       "nodeType": "IndexAccess",
                       "src": "2152:17:27",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Details_$5851_storage",
+                        "typeIdentifier": "t_struct$_Details_$5843_storage",
                         "typeString": "struct AutenticaERC721CompatibleMock.Details storage ref"
                       }
                     },
-                    "id": 5952,
+                    "id": 5944,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "creator",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 5844,
+                    "referencedDeclaration": 5836,
                     "src": "2152:25:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 5948,
-                  "id": 5953,
+                  "functionReturnParameters": 5940,
+                  "id": 5945,
                   "nodeType": "Return",
                   "src": "2145:32:27"
                 }
               ]
             },
             "documentation": {
-              "id": 5942,
+              "id": 5934,
               "nodeType": "StructuredDocumentation",
               "src": "1704:357:27",
               "text": " @dev Returns the creator of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: The Autentica Marketplace smart contract supports royalties, so in order for the\n creator to be paid, we need to know who created the token and that information must\n stay the same even if the person who owns the token changes."
             },
             "functionSelector": "d48e638a",
-            "id": 5955,
+            "id": 5947,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -13949,17 +13949,17 @@
             "nameLocation": "2075:10:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5945,
+              "id": 5937,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5944,
+                  "id": 5936,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "2094:7:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5955,
+                  "scope": 5947,
                   "src": "2086:15:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -13968,7 +13968,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5943,
+                    "id": 5935,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2086:7:27",
@@ -13983,17 +13983,17 @@
               "src": "2085:17:27"
             },
             "returnParameters": {
-              "id": 5948,
+              "id": 5940,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5947,
+                  "id": 5939,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5955,
+                  "scope": 5947,
                   "src": "2126:7:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14002,7 +14002,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5946,
+                    "id": 5938,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2126:7:27",
@@ -14017,7 +14017,7 @@
               ],
               "src": "2125:9:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "2066:118:27",
             "stateMutability": "view",
             "virtual": false,
@@ -14025,10 +14025,10 @@
           },
           {
             "baseFunctions": [
-              4336
+              4328
             ],
             "body": {
-              "id": 5968,
+              "id": 5960,
               "nodeType": "Block",
               "src": "2533:50:27",
               "statements": [
@@ -14036,24 +14036,24 @@
                   "expression": {
                     "expression": {
                       "baseExpression": {
-                        "id": 5963,
+                        "id": 5955,
                         "name": "_details",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5857,
+                        "referencedDeclaration": 5849,
                         "src": "2550:8:27",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5851_storage_$",
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Details_$5843_storage_$",
                           "typeString": "mapping(uint256 => struct AutenticaERC721CompatibleMock.Details storage ref)"
                         }
                       },
-                      "id": 5965,
+                      "id": 5957,
                       "indexExpression": {
-                        "id": 5964,
+                        "id": 5956,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5958,
+                        "referencedDeclaration": 5950,
                         "src": "2559:7:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -14067,39 +14067,39 @@
                       "nodeType": "IndexAccess",
                       "src": "2550:17:27",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Details_$5851_storage",
+                        "typeIdentifier": "t_struct$_Details_$5843_storage",
                         "typeString": "struct AutenticaERC721CompatibleMock.Details storage ref"
                       }
                     },
-                    "id": 5966,
+                    "id": 5958,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "investor",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 5846,
+                    "referencedDeclaration": 5838,
                     "src": "2550:26:27",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 5962,
-                  "id": 5967,
+                  "functionReturnParameters": 5954,
+                  "id": 5959,
                   "nodeType": "Return",
                   "src": "2543:33:27"
                 }
               ]
             },
             "documentation": {
-              "id": 5956,
+              "id": 5948,
               "nodeType": "StructuredDocumentation",
               "src": "2190:268:27",
               "text": " @dev Returns the investor of the `tokenId` token.\n @param tokenId NFT ID.\n NOTE: Autentica lets other people to pay for the gas fees of the token minting so\n in that case the minter is not the creator and owner of the token."
             },
             "functionSelector": "c99dccf9",
-            "id": 5969,
+            "id": 5961,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -14107,17 +14107,17 @@
             "nameLocation": "2472:11:27",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5959,
+              "id": 5951,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5958,
+                  "id": 5950,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nameLocation": "2492:7:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5969,
+                  "scope": 5961,
                   "src": "2484:15:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14126,7 +14126,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5957,
+                    "id": 5949,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2484:7:27",
@@ -14141,17 +14141,17 @@
               "src": "2483:17:27"
             },
             "returnParameters": {
-              "id": 5962,
+              "id": 5954,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5961,
+                  "id": 5953,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5969,
+                  "scope": 5961,
                   "src": "2524:7:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14160,7 +14160,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5960,
+                    "id": 5952,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2524:7:27",
@@ -14175,7 +14175,7 @@
               ],
               "src": "2523:9:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "2463:120:27",
             "stateMutability": "view",
             "virtual": false,
@@ -14184,10 +14184,10 @@
           {
             "baseFunctions": [
               1342,
-              3580
+              3572
             ],
             "body": {
-              "id": 5992,
+              "id": 5984,
               "nodeType": "Block",
               "src": "2802:137:27",
               "statements": [
@@ -14197,7 +14197,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 5990,
+                    "id": 5982,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -14207,17 +14207,17 @@
                         "typeIdentifier": "t_bytes4",
                         "typeString": "bytes4"
                       },
-                      "id": 5985,
+                      "id": 5977,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
-                        "id": 5980,
+                        "id": 5972,
                         "name": "interfaceId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5972,
+                        "referencedDeclaration": 5964,
                         "src": "2831:11:27",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -14230,14 +14230,14 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 5982,
+                              "id": 5974,
                               "name": "IERC721Autentica",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 4337,
+                              "referencedDeclaration": 4329,
                               "src": "2851:16:27",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_IERC721Autentica_$4337_$",
+                                "typeIdentifier": "t_type$_t_contract$_IERC721Autentica_$4329_$",
                                 "typeString": "type(contract IERC721Autentica)"
                               }
                             }
@@ -14245,11 +14245,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_type$_t_contract$_IERC721Autentica_$4337_$",
+                                "typeIdentifier": "t_type$_t_contract$_IERC721Autentica_$4329_$",
                                 "typeString": "type(contract IERC721Autentica)"
                               }
                             ],
-                            "id": 5981,
+                            "id": 5973,
                             "name": "type",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -14260,7 +14260,7 @@
                               "typeString": "function () pure"
                             }
                           },
-                          "id": 5983,
+                          "id": 5975,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -14271,11 +14271,11 @@
                           "src": "2846:22:27",
                           "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_magic_meta_type_t_contract$_IERC721Autentica_$4337",
+                            "typeIdentifier": "t_magic_meta_type_t_contract$_IERC721Autentica_$4329",
                             "typeString": "type(contract IERC721Autentica)"
                           }
                         },
-                        "id": 5984,
+                        "id": 5976,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -14299,11 +14299,11 @@
                     "rightExpression": {
                       "arguments": [
                         {
-                          "id": 5988,
+                          "id": 5980,
                           "name": "interfaceId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5972,
+                          "referencedDeclaration": 5964,
                           "src": "2920:11:27",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes4",
@@ -14319,18 +14319,18 @@
                           }
                         ],
                         "expression": {
-                          "id": 5986,
+                          "id": 5978,
                           "name": "super",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 4294967271,
                           "src": "2896:5:27",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_super$_AutenticaERC721CompatibleMock_$5994_$",
+                            "typeIdentifier": "t_type$_t_super$_AutenticaERC721CompatibleMock_$5986_$",
                             "typeString": "type(contract super AutenticaERC721CompatibleMock)"
                           }
                         },
-                        "id": 5987,
+                        "id": 5979,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -14344,7 +14344,7 @@
                           "typeString": "function (bytes4) view returns (bool)"
                         }
                       },
-                      "id": 5989,
+                      "id": 5981,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -14365,21 +14365,21 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 5979,
-                  "id": 5991,
+                  "functionReturnParameters": 5971,
+                  "id": 5983,
                   "nodeType": "Return",
                   "src": "2812:120:27"
                 }
               ]
             },
             "documentation": {
-              "id": 5970,
+              "id": 5962,
               "nodeType": "StructuredDocumentation",
               "src": "2589:56:27",
               "text": " @dev See {IERC165-supportsInterface}."
             },
             "functionSelector": "01ffc9a7",
-            "id": 5993,
+            "id": 5985,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -14387,38 +14387,38 @@
             "nameLocation": "2659:17:27",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 5976,
+              "id": 5968,
               "nodeType": "OverrideSpecifier",
               "overrides": [
                 {
-                  "id": 5974,
+                  "id": 5966,
                   "name": "ERC721",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 2115,
                   "src": "2758:6:27"
                 },
                 {
-                  "id": 5975,
+                  "id": 5967,
                   "name": "IERC165",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3581,
+                  "referencedDeclaration": 3573,
                   "src": "2766:7:27"
                 }
               ],
               "src": "2749:25:27"
             },
             "parameters": {
-              "id": 5973,
+              "id": 5965,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5972,
+                  "id": 5964,
                   "mutability": "mutable",
                   "name": "interfaceId",
                   "nameLocation": "2684:11:27",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5993,
+                  "scope": 5985,
                   "src": "2677:18:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14427,7 +14427,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 5971,
+                    "id": 5963,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "2677:6:27",
@@ -14442,17 +14442,17 @@
               "src": "2676:20:27"
             },
             "returnParameters": {
-              "id": 5979,
+              "id": 5971,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5978,
+                  "id": 5970,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5993,
+                  "scope": 5985,
                   "src": "2792:4:27",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -14461,7 +14461,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5977,
+                    "id": 5969,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2792:4:27",
@@ -14475,14 +14475,14 @@
               ],
               "src": "2791:6:27"
             },
-            "scope": 5994,
+            "scope": 5986,
             "src": "2650:289:27",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 5995,
+        "scope": 5987,
         "src": "247:2694:27",
         "usedErrors": []
       }
@@ -14494,8 +14494,8 @@
     "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.8",
-  "updatedAt": "2022-07-14T10:48:43.637Z",
+  "schemaVersion": "3.4.9",
+  "updatedAt": "2022-09-01T11:50:54.113Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
